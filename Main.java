@@ -11,6 +11,7 @@ public class Main {
             System.out.println("Баланс после снятия: " + account.getBalance());
 
             account.withdraw(200.0); // Превышение баланса
+            
             System.out.println("Эта строка не будет выполнена");
         } catch (IllegalArgumentException ex) {
             System.out.println("Ошибка: " + ex.getMessage());
